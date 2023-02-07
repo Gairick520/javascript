@@ -1,0 +1,115 @@
+*{
+    margin: 3px;
+    padding: 3px;
+    box-sizing: border-box;
+    
+}
+.container{
+    background: silver;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+    
+   
+}
+.co{
+    color: blue;
+}
+.psw{
+    display:flex;
+    gap: 1rem;
+}
+.login{
+    
+    width: 800px;
+    min-height: 400px;
+    overflow: hidden;
+    border-radius: 5px;
+    background: #222;
+    display: flex;
+    margin: auto;
+    background-color: white;
+    box-shadow: 15px 5px 30px rgba(0, 0, 0, 0.3);
+    font-weight: 700;
+    margin-top: 150px;
+}
+.content{
+    flex-basis: 50%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    
+
+}
+.content img{
+    width: 100%;
+    height: 100%;
+
+}
+.content hover image{
+    transform: scale(1.0);
+}
+.loginform{
+    flex-basis: 50%;
+    background: white;
+    font-family: roboto;
+    padding: 25px;
+    padding: 40px;
+}
+.loginform h1{
+    text-align: center;
+    font-size: 1.5 em;
+    color: #000000;
+    font-family: ui-sans-serif;
+    
+}
+.tbox{
+    border-radius: 3px;
+    background: transparent;
+    outline: none;
+    border: 1px solid white;
+    border-width: thin;
+    border-color: black;
+    width: 250px;
+    height: 35px;
+    margin: 30px 0;
+}
+.tbox input{
+    background: transparent;
+    width: 90%;
+    outline: none;
+    border: 0;
+    padding-left: 5px;
+}
+::placeholder{
+    color:#777;
+
+}
+.tbox{
+    color: #55efc4;
+    font-size: 15px;
+    padding: 7px;
+}
+.btn{
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    background: #00b894;
+    color: #fff;
+    padding: 12px;
+    font-size: 18px;
+}
+.warning-message{
+    font-size: 12px;
+    color: red;
+    
+}
+@media(max-width:768px){
+    .login{
+        flex-direction: column;
+        margin: 0 15px;
+ 
+    }
+}

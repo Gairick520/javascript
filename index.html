@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Flex Box</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+   
+  </head>
+  <body>
+    <div class="container">
+      <div class="login">
+        <div class="content">
+          <img src="images/image1.jpg" width="500px" />
+        </div>
+        <div class="loginform">
+            <h6>Welcome back</h6>
+            <h1>Login to your account</h1>
+        <form>
+          <div class="Header"></div>
+          
+            <p for="email">Email</p>
+            <input type="email" id="email" name="email" value="email">
+            <div id="email-warning" class="warning-message"></div>
+      
+          
+            <p for="password">Password</p>
+              <input type="password" id="pass" name="password" value="pass">
+              <div id="pass-warning" class="warning-message"></div>
+         
+          <div class="psw">
+            <div>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </div>
+            <p>Forgot Password</p></div>
+          <div id="Warning" class="warning-message"></div>
+          <button onclick="submit1()" class="btn">Login now ></button>
+          
+          <button class="btn" style=background-color:black>or sign in with google?</button>
+        </form>
+        <div>do not have an account?<span class="co">join free today</span></div>
+        </div>
+        
+      </div>
+    </div>
+  </body>
+  <script>
+    function submit1(){
+        console.log("sfdfgsdgfdsgfdsgfdg")
+        event.preventDefault()
+        let email="gairick@gmail.com";
+        let pass="123";
+        let x=document.getElementById("email").value;
+        let y=document.getElementById("pass").value;
+        if(x==email && y==pass){
+            window.location.href="loggedin.html";
+            window.location.replace="loggedin.html"
+        }
+        if(x!=email) {
+             document.getElementById("email-warning").innerHTML="email is incorrect.";
+         }
+         if(y!=pass) {
+             document.getElementById("pass-warning").innerHTML="password is incorrect.";
+         }
+        // else{
+        //      document.getElementById("Warning").innerHTML="Email/Password is incorrect.Kindly check it.";
+        //  }
+    }
+  </script>
+</html>
